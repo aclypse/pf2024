@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white; /* Set the background color if you want */
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction:row; /* Make sure the items are aligned in a row */
+    width: 600px;
+    height: auto;
+    background-color: black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left, .right {
+    color: white; /* Set the text color to white to contrast the black background */
+    margin: 0;
+}
+
+.canvas {
+    display: flex;
+    border: 2px solid red;
+}
+
+h1 {
+    border: 2px solid blue;
+    /* width:auto;
+    height: auto; */
+    text-align: center;
+    font-size:100px;
+    animation: color-change 10s; 
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.left, .right {
+    margin: 0;
+}
+
+@keyframes color-change {
+    from {
+        color: aqua;
+    }
+
+    50% {
+        color: blueviolet;
+    }
+
+    to {
+        color: crimson;
+    }
+}
